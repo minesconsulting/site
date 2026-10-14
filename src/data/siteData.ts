@@ -11,12 +11,14 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
+import { teamTyler, teamBrooke } from "../config/images";
+
 export const siteData = {
   // ── Business identity ────────────────────────────────────────────────────
-  name: 'Small Business Starter',
-  tagline: 'Professional service you can trust.',
+  name: 'MSCC',
+  tagline: 'Mines Software Consulting Club',
   description:
-    'A fast, mobile-first small-business website template built with Astro 7 and Tailwind v4. Fully customisable for any trade or service business.',
+    'Our mission is to provide pro-bono software engineering consulting services to academic and engineering clients by bringing together software and business students at Mines.',
   url: 'https://example.com',
   locale: 'en_US',
 
@@ -54,45 +56,39 @@ export const siteData = {
   // ── Navigation (add, remove, or reorder as needed) ───────────────────────
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Reviews', href: '/reviews' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Team', href: '/team' },
+    { label: 'Portfolio', href: '/reviews' },
+    { label: 'Processes', href: '/blog' },
   ],
 
   // ── Services ─────────────────────────────────────────────────────────────
   services: [
     {
-      title: 'General Repairs',
+      title: 'Full-Stack Applications',
       description:
-        'From leaky faucets to broken drywall, our team handles everyday repairs quickly and professionally. We diagnose the issue, explain your options, and get it fixed — no surprises on the bill.',
+        'We build robust, scalable web applications tailored to your business needs. From front-end interfaces to back-end APIs, we handle the full stack with modern technologies and best practices.',
     },
     {
-      title: 'Installations',
+      title: 'Data Processing & Analysis',
       description:
-        'New fixtures, appliances, water heaters, ceiling fans, and more. We ensure every installation is up to code, properly tested, and backed by our workmanship guarantee.',
+        'We help you make sense of your data with powerful analysis and visualization tools. From simple reports to complex machine learning models, we provide actionable insights to drive your business forward.',
     },
     {
-      title: 'Inspections',
+      title: 'Custom Tools & Plugins',
       description:
-        'Comprehensive property inspections for homebuyers, sellers, and proactive homeowners. We identify potential issues before they become expensive emergencies.',
+        'We create custom tools and plugins to extend the functionality of your existing systems. Whether you need a simple automation script or a complex integration, we have the expertise to deliver.',
     },
     {
-      title: 'Remodeling',
+      title: 'Specialized AI Development',
       description:
-        'Kitchen and bathroom remodels, basement finishing, and whole-home renovations. We manage the project from design through final walkthrough so you can enjoy the transformation.',
+        'We develop custom AI solutions to address your unique business challenges. From natural language processing to computer vision, we leverage the latest advancements in artificial intelligence to create powerful, scalable applications.',
     },
     {
-      title: 'Emergency Service',
+      title: 'Cloud Solutions & Backend Systems',
       description:
-        "Burst pipes, electrical outages, and other urgent problems don't wait — and neither do we. Our emergency line is staffed 24/7 for rapid response when you need it most.",
-    },
-    {
-      title: 'Maintenance Plans',
-      description:
-        'Regular preventive maintenance keeps your systems running efficiently and extends their lifespan. Ask about our seasonal service packages for year-round peace of mind.',
-    },
+        'We design and implement cloud-based solutions, distributed systems, and backend architectures that are reliable, scalable, and secure. Our expertise in cloud platforms and backend technologies ensures your applications perform optimally under any load.',
+    }
   ],
 
   // ── Reviews ──────────────────────────────────────────────────────────────
@@ -111,19 +107,46 @@ export const siteData = {
       'What started as a one-person operation has grown into a trusted local team. For over 15 years, we\'ve served homeowners and businesses with reliable, high-quality work — and we plan to keep doing just that for decades to come.',
       'Every member of our crew is licensed, insured, and background-checked. We treat your property with the same care we\'d give our own, and we stand behind every job with a satisfaction guarantee.',
     ],
-    team: [
-      { name: 'John Smith', role: 'Founder & Lead Technician', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-      { name: 'Maria Garcia', role: 'Operations Manager', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80' },
-      { name: 'David Chen', role: 'Senior Technician', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
-    ],
+    team: {
+      executive: [
+        { name: 'Rish Bector', role: 'Founder & President', image: teamTyler },
+        { name: 'Tyler Collingridge', role: 'Founder & VP of Business', image: teamTyler },
+        { name: 'Brooke Fiedler', role: 'Founder & VP of Marketing', image: teamBrooke },
+        { name: 'Austin Zuber', role: 'Founder & VP of Member Development', image: teamBrooke },
+        { name: 'Pratik Asarpota', role: 'VP of Product', image: teamBrooke },
+        { name: 'Alaa Edine', role: 'VP of Engineering', image: teamBrooke },
+        { name: 'Livie Rome', role: 'VP of Outreach', image: teamBrooke },
+        { name: 'Trisha Varadaraj', role: 'VP of Recruitment', image: teamBrooke },
+      ],
+      consultants: [
+        { name: 'Grant Anderson', role: 'Consultant', image: teamTyler },
+        { name: 'Mark Duffalo', role: 'Consultant', image: teamTyler },
+        { name: 'Rhys Cadwallader', role: 'Consultant', image: teamTyler },
+        { name: 'Jack Canonico', role: 'Consultant', image: teamTyler },
+        { name: 'Danial Aghassi', role: 'Consultant', image: teamTyler },
+        { name: 'Xavier Adams', role: 'Consultant', image: teamTyler },
+        { name: 'Garrison White', role: 'Consultant', image: teamTyler },
+        { name: 'Ben Ferguson', role: 'Consultant', image: teamTyler },
+        { name: 'Gary Lewis', role: 'Consultant', image: teamTyler },
+        { name: 'Ryan Koch', role: 'Consultant', image: teamTyler },
+        { name: 'Konrad Quam', role: 'Consultant', image: teamTyler },
+        { name: 'Matthew Johnson', role: 'Consultant', image: teamTyler },
+        { name: 'Carter Bartkiewicz', role: 'Consultant', image: teamTyler },
+        { name: 'John Bradley', role: 'Consultant', image: teamTyler },
+        { name: 'Jiah Spector', role: 'Consultant', image: teamTyler },
+        { name: 'Evan Chai', role: 'Consultant', image: teamTyler },
+        { name: 'Aadesh Bhattarai', role: 'Consultant', image: teamTyler },
+      ],
+      alumni: [],
+    },
   },
 
   // ── Trust bar items (homepage strip) ─────────────────────────────────────
   trustItems: [
-    { label: 'Licensed' },
-    { label: 'Fully Insured' },
-    { label: 'Years Experience', value: '15+' },
-    { label: 'Jobs Completed', value: '2,500+' },
+    { label: 'Full-Stack Applications' },
+    { label: 'Data Processing & Analysis' },
+    { label: 'Custom Tools & Plugins' },
+    { label: 'Specialized AI Development' },
   ],
 
   // ── Footer nav columns ──────────────────────────────────────────────────

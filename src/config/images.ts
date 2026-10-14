@@ -41,7 +41,16 @@ export { heroImage };
 // import below, update the filename, and change the export to: export { aboutImage };
 //
 // import aboutImage from '../assets/images/about/team.jpg';
-export const aboutImage: ImageMetadata | undefined = undefined;
+
+import msccImage from "../assets/images/mscc.png";
+export const logoImage: ImageMetadata = msccImage;
+
+import teamBrookeImage from "../assets/images/team/brooke.png";
+export const teamBrooke: ImageMetadata = teamBrookeImage;
+
+import teamTylerImage from "../assets/images/team/tyler.jpg";
+export const teamTyler: ImageMetadata = teamTylerImage;
+
 //comment out above and uncomment below to use your own image
 // export { aboutImage };
 

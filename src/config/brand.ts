@@ -14,10 +14,10 @@
 
 export const brand = {
   // ── Site Identity ──────────────────────────────────────────────────────────
-  name: 'Small Business Starter',
-  tagline: 'Professional service you can trust.',
+  name: 'MSCC',
+  tagline: 'Mines Software Consulting Club',
   description:
-    'A fast, mobile-first small-business website template built with Astro 7 and Tailwind v4. Fully customisable for any trade or service business.',
+    'Our mission is to provide pro-bono software engineering consulting services to academic and engineering clients by bringing together software and business students at Mines.',
   url: 'https://example.com',
   locale: 'en_US',
 
