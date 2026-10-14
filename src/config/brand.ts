@@ -17,7 +17,7 @@ export const brand = {
   name: 'MSCC',
   tagline: 'Mines Software Consulting Club',
   description:
-    'Our mission is to provide pro-bono software engineering consulting services to academic and engineering clients by bringing together software and business students at Mines.',
+    'Our mission is to provide pro-bono software engineering consulting services to academic and engineering clients.',
   url: 'https://example.com',
   locale: 'en_US',
 
