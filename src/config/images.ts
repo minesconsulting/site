@@ -45,11 +45,17 @@ export { heroImage };
 import msccImage from "../assets/images/mscc.png";
 export const logoImage: ImageMetadata = msccImage;
 
+import teamBlankImage from "../assets/images/team/blank.jpg";
+export const teamBlank: ImageMetadata = teamBlankImage;
+
 import teamBrookeImage from "../assets/images/team/brooke.png";
 export const teamBrooke: ImageMetadata = teamBrookeImage;
 
 import teamTylerImage from "../assets/images/team/tyler.jpg";
 export const teamTyler: ImageMetadata = teamTylerImage;
+
+import teamRishImage from "../assets/images/team/rish.png";
+export const teamRish: ImageMetadata = teamRishImage;
 
 //comment out above and uncomment below to use your own image
 // export { aboutImage };

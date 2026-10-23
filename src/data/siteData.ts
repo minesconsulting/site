@@ -11,7 +11,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-import { teamTyler, teamBrooke } from "../config/images";
+import { teamBlank, teamBrooke, teamRish, teamTyler } from "../config/images";
 
 export const siteData = {
   // ── Business identity ────────────────────────────────────────────────────
@@ -109,33 +109,32 @@ export const siteData = {
     ],
     team: {
       executive: [
-        { name: 'Rish Bector', role: 'Founder & President', image: teamTyler },
+        { name: 'Rish Bector', role: 'Founder & President', image: teamRish },
         { name: 'Tyler Collingridge', role: 'Founder & VP of Business', image: teamTyler },
         { name: 'Brooke Fiedler', role: 'Founder & VP of Marketing', image: teamBrooke },
-        { name: 'Austin Zuber', role: 'Founder & VP of Member Development', image: teamBrooke },
-        { name: 'Pratik Asarpota', role: 'VP of Product', image: teamBrooke },
-        { name: 'Alaa Edine', role: 'VP of Engineering', image: teamBrooke },
-        { name: 'Livie Rome', role: 'VP of Outreach', image: teamBrooke },
-        { name: 'Trisha Varadaraj', role: 'VP of Recruitment', image: teamBrooke },
+        { name: 'Austin Zuber', role: 'Founder & VP of Member Development', image: teamBlank },
+        { name: 'Pratik Asarpota', role: 'VP of Product', image: teamBlank },
+        { name: 'Trisha Varadaraj', role: 'VP of Outreach', image: teamBlank },
+        { name: 'Garrison White', role: 'VP of Recruitment', image: teamBlank },
       ],
       consultants: [
-        { name: 'Grant Anderson', role: 'Consultant', image: teamTyler },
-        { name: 'Mark Duffalo', role: 'Consultant', image: teamTyler },
-        { name: 'Rhys Cadwallader', role: 'Consultant', image: teamTyler },
-        { name: 'Jack Canonico', role: 'Consultant', image: teamTyler },
-        { name: 'Danial Aghassi', role: 'Consultant', image: teamTyler },
-        { name: 'Xavier Adams', role: 'Consultant', image: teamTyler },
-        { name: 'Garrison White', role: 'Consultant', image: teamTyler },
-        { name: 'Ben Ferguson', role: 'Consultant', image: teamTyler },
-        { name: 'Gary Lewis', role: 'Consultant', image: teamTyler },
-        { name: 'Ryan Koch', role: 'Consultant', image: teamTyler },
-        { name: 'Konrad Quam', role: 'Consultant', image: teamTyler },
-        { name: 'Matthew Johnson', role: 'Consultant', image: teamTyler },
-        { name: 'Carter Bartkiewicz', role: 'Consultant', image: teamTyler },
-        { name: 'John Bradley', role: 'Consultant', image: teamTyler },
-        { name: 'Jiah Spector', role: 'Consultant', image: teamTyler },
-        { name: 'Evan Chai', role: 'Consultant', image: teamTyler },
-        { name: 'Aadesh Bhattarai', role: 'Consultant', image: teamTyler },
+        { name: 'Grant Anderson', role: 'Consultant', image: teamBlank },
+        { name: 'Mark Duffalo', role: 'Consultant', image: teamBlank },
+        { name: 'Rhys Cadwallader', role: 'Consultant', image: teamBlank },
+        { name: 'Jack Canonico', role: 'Consultant', image: teamBlank },
+        { name: 'Danial Aghassi', role: 'Consultant', image: teamBlank },
+        { name: 'Xavier Adams', role: 'Consultant', image: teamBlank },
+        { name: 'Garrison White', role: 'Consultant', image: teamBlank },
+        { name: 'Ben Ferguson', role: 'Consultant', image: teamBlank },
+        { name: 'Gary Lewis', role: 'Consultant', image: teamBlank },
+        { name: 'Ryan Koch', role: 'Consultant', image: teamBlank },
+        { name: 'Konrad Quam', role: 'Consultant', image: teamBlank },
+        { name: 'Matthew Johnson', role: 'Consultant', image: teamBlank },
+        { name: 'Carter Bartkiewicz', role: 'Consultant', image: teamBlank },
+        { name: 'John Bradley', role: 'Consultant', image: teamBlank },
+        { name: 'Jiah Spector', role: 'Consultant', image: teamBlank },
+        { name: 'Evan Chai', role: 'Consultant', image: teamBlank },
+        { name: 'Aadesh Bhattarai', role: 'Consultant', image: teamBlank },
       ],
       alumni: [],
     },
