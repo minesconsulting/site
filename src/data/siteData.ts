@@ -28,12 +28,6 @@ export const siteData = {
 
   // ── Contact ──────────────────────────────────────────────────────────────
   email: 'mines.consulting.club@gmail.com',
-  hours: [
-    { days: 'Monday - Friday', time: '7:00 AM - 6:00 PM' },
-    { days: 'Saturday', time: '8:00 AM - 2:00 PM' },
-    { days: 'Sunday', time: 'Closed' },
-  ],
-  emergencyService: '24/7 Emergency Service Available',
 
   // ── Social media (set to empty string to hide a link) ────────────────────
   socials: {
