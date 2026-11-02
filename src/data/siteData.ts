@@ -27,18 +27,7 @@ export const siteData = {
   license: 'Lic# 123456',
 
   // ── Contact ──────────────────────────────────────────────────────────────
-  email: 'hello@example.com',
-  phoneForTel: '555-867-5309',
-  phoneFormatted: '(555) 867-5309',
-  address: {
-    lineOne: '123 Main Street',
-    lineTwo: 'Suite 100',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80206',
-    country: 'US',
-    mapLink: 'https://maps.app.goo.gl/example',
-  },
+  email: 'mines.consulting.club@gmail.com',
   hours: [
     { days: 'Monday - Friday', time: '7:00 AM - 6:00 PM' },
     { days: 'Saturday', time: '8:00 AM - 2:00 PM' },

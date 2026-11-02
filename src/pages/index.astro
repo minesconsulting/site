@@ -20,16 +20,7 @@ import { siteData } from "../data/siteData";
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: siteData.name,
-    telephone: siteData.phoneForTel,
     email: siteData.email,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: siteData.address.lineOne,
-      addressLocality: siteData.address.city,
-      addressRegion: siteData.address.state,
-      postalCode: siteData.address.zip,
-      addressCountry: siteData.address.country,
-    },
     url: siteData.url,
   }}
 >

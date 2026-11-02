@@ -77,17 +77,6 @@ import { siteData } from "../../data/siteData";
           </label>
 
           <label class="flex flex-col gap-1.5">
-            <span class="text-sm font-medium text-text">Phone</span>
-            <input
-              type="tel"
-              name="phone"
-              autocomplete="tel"
-              inputmode="tel"
-              class="min-h-11 rounded-md border border-border bg-background px-4 py-2.5 text-text transition-colors focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
-            />
-          </label>
-
-          <label class="flex flex-col gap-1.5">
             <span class="text-sm font-medium text-text"
               >Message{" "}<span class="text-accent" aria-hidden="true">*</span
               ></span
@@ -112,45 +101,12 @@ import { siteData } from "../../data/siteData";
       <!-- Contact info sidebar -->
       <aside class="space-y-8 lg:col-span-2">
         <div>
-          <h3 class="font-heading text-lg font-semibold text-text">Call Us</h3>
-          <a
-            href={`tel:${siteData.phoneForTel}`}
-            class="mt-1 block font-medium text-primary-light transition-colors hover:text-primary"
-          >
-            {siteData.phoneFormatted}
-          </a>
-        </div>
-
-        <div>
           <h3 class="font-heading text-lg font-semibold text-text">Email Us</h3>
           <a
             href={`mailto:${siteData.email}`}
             class="mt-1 block font-medium text-primary-light transition-colors hover:text-primary"
           >
             {siteData.email}
-          </a>
-        </div>
-
-        <div>
-          <h3 class="font-heading text-lg font-semibold text-text">Visit Us</h3>
-          <a
-            href={siteData.address.mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="mt-1 block text-text-muted transition-colors hover:text-text"
-          >
-            {siteData.address.lineOne}<br />
-            {
-              siteData.address.lineTwo && (
-                <>
-                  {siteData.address.lineTwo}
-                  <br />
-                </>
-              )
-            }
-            {siteData.address.city}, {siteData.address.state}{" "}{
-              siteData.address.zip
-            }
           </a>
         </div>
 
