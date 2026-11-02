@@ -137,7 +137,7 @@ export const siteData = {
         // { label: 'About', href: '/about' },
         // { label: 'Services', href: '/services' },
         { label: 'Team', href: '/team' },
-        { label: 'Portfolio', href: '/portfolio' },
+        { label: 'Portfolio', href: '/reviews' },
         { label: 'Processes', href: '/blog' },
       ],
     },
