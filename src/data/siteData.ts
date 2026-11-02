@@ -140,16 +140,16 @@ export const siteData = {
     {
       title: 'Company',
       links: [
-        { label: 'About', href: '/about' },
+        // { label: 'About', href: '/about' },
         // { label: 'Services', href: '/services' },
-        { label: 'Reviews', href: '/reviews' },
-        { label: 'Blog', href: '/blog' },
+        { label: 'Team', href: '/team' },
+        { label: 'Portfolio', href: '/portfolio' },
+        { label: 'Processes', href: '/processes' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { label: 'Contact', href: '/contact' },
         { label: 'Privacy', href: '/privacy' },
         { label: 'Terms', href: '/terms' },
       ],
