@@ -1,0 +1,37 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+  buttonText?: string;
+  buttonHref?: string;
+}
+
+const {
+  title = "Interested in Speaking?",
+  description = "We host speakers at our monthly general body meetings. If you're interested in speaking, please fill out the form below.",
+  buttonText = "Apply to Speak",
+  buttonHref = "https://docs.google.com/forms/d/e/1FAIpQLSf2j6Lx1HzceGGvsHmE5HvvuJ_9Wpgaym1Mrq2WXi1nC_OdMw/viewform?usp=header",
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-surface py-16 sm:py-20 lg:py-24">
+  <div class="mx-auto max-w-site px-4 text-center sm:px-6">
+    <h2 class="font-heading text-h2 font-bold uppercase text-text">
+      {title}
+    </h2>
+    <p class="mx-auto mt-4 max-w-xl text-text-muted leading-relaxed">
+      {description}
+    </p>
+
+    <div
+      class="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+    >
+      <a
+        href={buttonHref}
+        class="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-8 py-3 text-base font-bold text-primary-fg shadow-sm transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+      >
+        {buttonText}
+      </a>
+    </div>
+  </div>
+</section>
