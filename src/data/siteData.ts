@@ -48,9 +48,7 @@ export const siteData = {
 
   // ── Social media (set to empty string to hide a link) ────────────────────
   socials: {
-    facebook: 'https://www.facebook.com/',
-    instagram: 'https://www.instagram.com/',
-    google: 'https://www.google.com/maps',
+    instagram: 'https://www.instagram.com/mines.consulting/?utm_source=ig_web_button_share_sheet',
   },
 
   // ── Navigation (add, remove, or reorder as needed) ───────────────────────

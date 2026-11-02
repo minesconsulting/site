@@ -29,18 +29,6 @@ const { footerNav } = siteData;
         <!-- Social links (plain text) -->
         <div class="mt-5 flex flex-wrap items-center gap-4">
           {
-            siteData.socials.facebook && (
-              <a
-                href={siteData.socials.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-sm text-surface/60 transition-colors hover:text-white"
-              >
-                Facebook
-              </a>
-            )
-          }
-          {
             siteData.socials.instagram && (
               <a
                 href={siteData.socials.instagram}
@@ -49,18 +37,6 @@ const { footerNav } = siteData;
                 class="text-sm text-surface/60 transition-colors hover:text-white"
               >
                 Instagram
-              </a>
-            )
-          }
-          {
-            siteData.socials.google && (
-              <a
-                href={siteData.socials.google}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-sm text-surface/60 transition-colors hover:text-white"
-              >
-                Google
               </a>
             )
           }
