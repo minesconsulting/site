@@ -56,7 +56,7 @@ export const siteData = {
   // ── Navigation (add, remove, or reorder as needed) ───────────────────────
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
+    // { label: 'Services', href: '/services' },
     { label: 'Team', href: '/team' },
     { label: 'Portfolio', href: '/reviews' },
     { label: 'Processes', href: '/blog' },
@@ -154,7 +154,7 @@ export const siteData = {
       title: 'Company',
       links: [
         { label: 'About', href: '/about' },
-        { label: 'Services', href: '/services' },
+        // { label: 'Services', href: '/services' },
         { label: 'Reviews', href: '/reviews' },
         { label: 'Blog', href: '/blog' },
       ],
