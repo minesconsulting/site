@@ -45,8 +45,14 @@ export { heroImage };
 import msccImage from "../assets/images/mscc.png";
 export const logoImage: ImageMetadata = msccImage;
 
-import teamBlankImage from "../assets/images/team/blank.jpg";
-export const teamBlank: ImageMetadata = teamBlankImage;
+import teamAustinImage from "../assets/images/team/austin.png";
+export const teamAustin: ImageMetadata = teamAustinImage;
+
+import teamGarrisonImage from "../assets/images/team/garrison.png";
+export const teamGarrison: ImageMetadata = teamGarrisonImage;
+
+import teamTrishaImage from "../assets/images/team/trisha.png";
+export const teamTrisha: ImageMetadata = teamTrishaImage;
 
 import teamBrookeImage from "../assets/images/team/brooke.png";
 export const teamBrooke: ImageMetadata = teamBrookeImage;
