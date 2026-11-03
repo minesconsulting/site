@@ -1,0 +1,107 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Banner from "../components/Banner.astro";
+import CTA from "../components/CTA.astro";
+import { brand } from "../config/brand";
+
+const steps = [
+  {
+    title: "Initial Conversation",
+    description:
+      "Reach out through our contact form or email and tell us what you're hoping to build. We'll set up a short call to understand your goals, timeline, and technical constraints, and assign you a client sponsor as the main point of contact with us. If you have an existing relationship with a Mines Consulting member, they can be your sponsor.",
+  },
+  {
+    title: "Project Proposal",
+    description:
+      "You'll submit a project proposal using our standard template. We're happy to help you fill it out. If anything needs clarification, we can set up an optional call with our President and VPs of Engineering and Productto talk through technical, product, or team requirements.",
+  },
+  {
+    title: "Proposal Review",
+    description:
+      "Our executive team (the President, VP of Business, VPs of Engineering, and VP of Product) will review your proposal for feasibility and fit. If the project is a good match, we will confirm with you. If required, we will work with you to prepare a short engagement agreement covering code ownership, data handling, and confidentiality (optional step).",
+  },
+  {
+    title: "Team Assembly",
+    description:
+      "We present your project at a general body meeting and invite interested members to apply. Our VPs of Engineering interview candidates for commitment and experience, then assemble a dedicated team made up of a tech lead, a product lead, and engineers.",
+  },
+  {
+    title: "Planning & Specifications",
+    description:
+      "Your product lead writes a Product Requirements Document (PRD) describing the features and user experience, and meets with you to make sure nothing is misunderstood. In parallel, your tech lead drafts the technical specification for how it will be built. You review and approve the PRD before any development begins.",
+  },
+  {
+    title: "Development",
+    description:
+      "The team holds weekly SCRUM meetings, breaks work into features, and reviews each other's code. Your product lead tracks progress against the PRD and tests along the way. You'll get regular updates and the chance to see progress as it happens.",
+  },
+  {
+    title: "Delivery & Handoff",
+    description:
+      "We demonstrate the final product and you test the installation and usage on your end. You receive a complete handoff package consisting of source code, documentation, credentials, and anything else you need. Once you're satisfied, you sign an acceptance form and the project is officially yours.",
+  },
+  {
+    title: "Post-Delivery Support",
+    description:
+      "Every project includes 60 days of bug fixes after delivery. We check in with you at 30, 90, and 180 days to see how things are going, and we'll ask for a short testimonial and feedback survey so we can keep improving.",
+  },
+];
+---
+
+<BaseLayout
+  title="Our Process"
+  description={`How working with ${brand.name} works from the first conversation to delivery and post-launch support.`}
+>
+  <Header slot="header" />
+
+  <Banner title="Our Process" />
+
+  <!-- Overview + timeline -->
+  <section class="bg-surface py-section">
+    <div class="mx-auto max-w-site px-4 sm:px-6">
+      <div class="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
+        <h2 class="mt-2 font-heading text-h2 font-bold uppercase text-text">
+          Client Process Overview
+        </h2>
+        <p class="mt-4 text-text-muted leading-relaxed">
+          Every engagement follows the same structure. Here's what to expect at
+          each stage if you're an interested client:
+        </p>
+      </div>
+
+      <ol class="mx-auto flex max-w-3xl flex-col" role="list">
+        {
+          steps.map((step, i) => (
+            <li class="flex gap-4 sm:gap-6">
+              <div class="flex flex-col items-center" aria-hidden="true">
+                <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent font-heading text-sm font-bold text-white">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {i < steps.length - 1 && (
+                  <span class="mt-2 w-0.5 flex-1 bg-border" />
+                )}
+              </div>
+
+              <div class:list={["flex-1", i < steps.length - 1 && "pb-10"]}>
+                <div class="rounded-lg border border-border bg-background p-6 shadow-sm">
+                  <h3 class="font-heading text-lg font-semibold text-text">
+                    {step.title}
+                  </h3>
+                  <p class="mt-2 text-text-muted leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <CTA />
+
+  <Footer slot="footer" />
+</BaseLayout>
