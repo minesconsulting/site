@@ -35,8 +35,8 @@ export const siteData = {
     { label: 'Home', href: '/' },
     // { label: 'Services', href: '/services' },
     { label: 'Team', href: '/team' },
-    { label: 'Portfolio', href: '/reviews' },
-    { label: 'Processes', href: '/blog' },
+    { label: 'Processes', href: '/processes' },
+    { label: 'Portfolio', href: '/portfolio' },
   ],
 
   // ── Services ─────────────────────────────────────────────────────────────
