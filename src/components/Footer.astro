@@ -29,18 +29,6 @@ const { footerNav } = siteData;
         <!-- Social links (plain text) -->
         <div class="mt-5 flex flex-wrap items-center gap-4">
           {
-            siteData.socials.facebook && (
-              <a
-                href={siteData.socials.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-sm text-surface/60 transition-colors hover:text-white"
-              >
-                Facebook
-              </a>
-            )
-          }
-          {
             siteData.socials.instagram && (
               <a
                 href={siteData.socials.instagram}
@@ -49,18 +37,6 @@ const { footerNav } = siteData;
                 class="text-sm text-surface/60 transition-colors hover:text-white"
               >
                 Instagram
-              </a>
-            )
-          }
-          {
-            siteData.socials.google && (
-              <a
-                href={siteData.socials.google}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-sm text-surface/60 transition-colors hover:text-white"
-              >
-                Google
               </a>
             )
           }
@@ -98,31 +74,10 @@ const { footerNav } = siteData;
         <ul class="mt-3 space-y-2 text-sm">
           <li>
             <a
-              href={`tel:${siteData.phoneForTel}`}
-              class="transition-colors hover:text-white"
-            >
-              {siteData.phoneFormatted}
-            </a>
-          </li>
-          <li>
-            <a
               href={`mailto:${siteData.email}`}
               class="transition-colors hover:text-white"
             >
               {siteData.email}
-            </a>
-          </li>
-          <li>
-            <a
-              href={siteData.address.mapLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="transition-colors hover:text-white"
-            >
-              {siteData.address.lineOne}<br />
-              {siteData.address.city}, {siteData.address.state}{" "}{
-                siteData.address.zip
-              }
             </a>
           </li>
         </ul>

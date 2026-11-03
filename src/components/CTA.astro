@@ -12,7 +12,7 @@ const {
   title = "Ready to Get Started?",
   description = "Contact us today to discuss your project. All of our services are provided pro-bono to academic and engineering clients.",
   buttonText = "Submit a Project",
-  buttonHref = "/contact",
+  buttonHref = "https://docs.google.com/forms/d/e/1FAIpQLSdd4Xin70PpVMI3Z9ODlsrHPwALinMmZntF7Cqu_7shOf6-0g/viewform?usp=header",
 } = Astro.props;
 ---
 
@@ -35,7 +35,7 @@ const {
         {buttonText}
       </a>
       <a
-        href={`tel:${siteData.phoneForTel}`}
+        href={`mailto:${siteData.email}`}
         class="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border-2 border-primary-fg/30 px-8 py-3 text-base font-bold text-primary-fg transition-colors hover:border-primary-fg hover:bg-primary-fg/10"
       >
         Email us at {" "}{siteData.email}

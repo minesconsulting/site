@@ -27,36 +27,17 @@ export const siteData = {
   license: 'Lic# 123456',
 
   // ── Contact ──────────────────────────────────────────────────────────────
-  email: 'hello@example.com',
-  phoneForTel: '555-867-5309',
-  phoneFormatted: '(555) 867-5309',
-  address: {
-    lineOne: '123 Main Street',
-    lineTwo: 'Suite 100',
-    city: 'Denver',
-    state: 'CO',
-    zip: '80206',
-    country: 'US',
-    mapLink: 'https://maps.app.goo.gl/example',
-  },
-  hours: [
-    { days: 'Monday - Friday', time: '7:00 AM - 6:00 PM' },
-    { days: 'Saturday', time: '8:00 AM - 2:00 PM' },
-    { days: 'Sunday', time: 'Closed' },
-  ],
-  emergencyService: '24/7 Emergency Service Available',
+  email: 'mines.consulting.club@gmail.com',
 
   // ── Social media (set to empty string to hide a link) ────────────────────
   socials: {
-    facebook: 'https://www.facebook.com/',
-    instagram: 'https://www.instagram.com/',
-    google: 'https://www.google.com/maps',
+    instagram: 'https://www.instagram.com/mines.consulting/?utm_source=ig_web_button_share_sheet',
   },
 
   // ── Navigation (add, remove, or reorder as needed) ───────────────────────
   nav: [
     { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
+    // { label: 'Services', href: '/services' },
     { label: 'Team', href: '/team' },
     { label: 'Portfolio', href: '/reviews' },
     { label: 'Processes', href: '/blog' },
@@ -153,16 +134,16 @@ export const siteData = {
     {
       title: 'Company',
       links: [
-        { label: 'About', href: '/about' },
-        { label: 'Services', href: '/services' },
-        { label: 'Reviews', href: '/reviews' },
-        { label: 'Blog', href: '/blog' },
+        // { label: 'About', href: '/about' },
+        // { label: 'Services', href: '/services' },
+        { label: 'Team', href: '/team' },
+        { label: 'Portfolio', href: '/reviews' },
+        { label: 'Processes', href: '/blog' },
       ],
     },
     {
       title: 'Support',
       links: [
-        { label: 'Contact', href: '/contact' },
         { label: 'Privacy', href: '/privacy' },
         { label: 'Terms', href: '/terms' },
       ],
