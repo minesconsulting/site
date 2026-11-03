@@ -11,7 +11,7 @@
  * ─────────────────────────────────────────────────────────────────────────────
  */
 
-import { teamBlank, teamBrooke, teamRish, teamTyler } from "../config/images";
+import { teamBrooke, teamRish, teamTyler, teamAustin, teamGarrison, teamTrisha } from "../config/images";
 
 export const siteData = {
   // ── Business identity ────────────────────────────────────────────────────
@@ -89,10 +89,9 @@ export const siteData = {
         { name: 'Rish Bector', role: 'Founder & President', image: teamRish },
         { name: 'Tyler Collingridge', role: 'Founder & VP of Business', image: teamTyler },
         { name: 'Brooke Fiedler', role: 'Founder & VP of Marketing', image: teamBrooke },
-        { name: 'Austin Zuber', role: 'Founder & VP of Member Development', image: teamBlank },
-        { name: 'Pratik Asarpota', role: 'VP of Product', image: teamBlank },
-        { name: 'Trisha Varadaraj', role: 'VP of Outreach', image: teamBlank },
-        { name: 'Garrison White', role: 'VP of Recruitment', image: teamBlank },
+        { name: 'Austin Zuber', role: 'Founder & VP of Member Development', image: teamAustin },
+        { name: 'Trisha Varadaraj', role: 'VP of Outreach', image: teamTrisha },
+        { name: 'Garrison White', role: 'VP of Recruitment', image: teamGarrison },
       ],
       consultants: [
         { name: 'Grant Anderson' },
@@ -133,8 +132,8 @@ export const siteData = {
         // { label: 'About', href: '/about' },
         // { label: 'Services', href: '/services' },
         { label: 'Team', href: '/team' },
-        { label: 'Portfolio', href: '/reviews' },
-        { label: 'Processes', href: '/blog' },
+        { label: 'Processes', href: '/processes' },
+        { label: 'Portfolio', href: '/portfolio' },
       ],
     },
     {
