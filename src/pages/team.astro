@@ -19,29 +19,6 @@ const { about } = siteData;
 
   <Banner title="Our Team" />
 
-  <!-- Story -->
-  <!-- <section class="py-section">
-    <div class="mx-auto grid max-w-site grid-cols-1 items-center gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14">
-      <div class="overflow-hidden rounded-lg shadow-lg">
-        <Image
-          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
-          alt="Our team planning a project together"
-          width={800}
-          height={600}
-          loading="lazy"
-          class="size-full object-cover"
-        />
-      </div>
-      <div class="space-y-5">
-        <span class="text-topper font-bold uppercase tracking-widest text-accent">Our Story</span>
-        <h2 class="font-heading text-h2 font-bold uppercase text-text">Built on trust, driven by quality</h2>
-        {about.story.map((paragraph) => (
-          <p class="text-text-muted leading-relaxed">{paragraph}</p>
-        ))}
-      </div>
-    </div>
-  </section> -->
-
   <!-- Team -->
   <section class="bg-surface py-section">
     <div class="mx-auto max-w-site px-4 sm:px-6">
@@ -82,24 +59,13 @@ const { about } = siteData;
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
         {
-          about.team.consultants.map(({ name, role, image }) => (
-            <div class="overflow-hidden rounded-lg bg-background shadow-sm">
-              <Image
-                src={image}
-                alt={name}
-                width={400}
-                height={400}
-                loading="lazy"
-                class="aspect-square w-full object-cover"
-              />
-              <div class="p-5">
-                <h3 class="font-heading text-lg font-semibold text-text">
-                  {name}
-                </h3>
-                <p class="text-sm text-text-muted">{role}</p>
-              </div>
+          about.team.consultants.map(({ name }) => (
+            <div class="flex items-center justify-center rounded-lg border border-border bg-background px-7 py-7 text-center shadow-sm transition-shadow hover:shadow-md">
+              <h3 class="font-heading text-base font-bold text-text">{name}</h3>
             </div>
           ))
         }
@@ -107,7 +73,7 @@ const { about } = siteData;
 
       <div style="height: 75px; width: 100%; margin-bottom: 2rem;"></div>
 
-      <div class="mx-auto mb-10 max-w-2xl text-center">
+      <!-- <div class="mx-auto mb-10 max-w-2xl text-center">
         <h2 class="mt-2 font-heading text-h2 font-bold uppercase text-text">
           Alumni
         </h2>
@@ -134,7 +100,7 @@ const { about } = siteData;
             </div>
           ))
         }
-      </div>
+      </div> -->
     </div>
   </section>
 
